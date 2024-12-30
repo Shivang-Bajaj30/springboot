@@ -1,0 +1,351 @@
+@import "compass/css3";
+
+@import "compass";
+@import url("https://fonts.googleapis.com/css?family=Lato");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*{
+    text-decoration: none;
+
+}
+
+.part-1{
+    margin: -60.5px;
+    margin-left: -14px;
+    margin-right: 0px;
+    padding-bottom: 5px;
+    height: 0px;
+    background-image: url("../images/homebg.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.logo{
+    color: white;
+    width: 20px;
+    height: 20px;
+}
+
+.navbar{
+    /* background-color: crimson; */
+    background: transparent;
+    backdrop-filter: blur(9px);
+    font-family: calibri;
+    padding-right: 15px;
+    padding-left: 15px;
+    /* position: fixed; */
+}
+
+#name{
+    margin-left: 19px;
+    font-size: 22px;
+    margin-right: 860px;
+    color: white;
+}
+
+#home .nav-link{
+    margin-top: -1px;
+    margin-right: 5px;
+    color: white;
+}
+
+#logo{
+    fill: white;
+}
+
+.form-control {
+    background-color: transparent; 
+    border: 1px solid #ccc; 
+    color: #000; 
+}
+
+ul{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+li {
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.container-fluid {
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.signup{
+    margin-left: 10px;
+    margin-top: 3px;
+    padding-bottom: 0px;
+    width: 90px;
+}
+
+.login{
+    margin-top: 3px;
+}
+
+.part-1{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.car-search {
+    width: 602px;
+    height: 404px;
+    transform:rotateY('60');
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    border-radius: 12px;
+    padding: 30px 40px;
+    position: absolute;
+    right: 0px;
+}
+
+.car-search .btn {
+    text-align: center;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #000000;
+    font-weight: 600;
+}
+
+.car-search .btn{
+    width: 339px;
+    padding-bottom: 7px;
+    margin-left: 81px;
+}
+.BOX input::placeholder{
+    color: #fff;
+    opacity: 0.7;
+
+}  
+
+.BOX i{
+    position: absolute;
+    right: 20px;
+    top: 30%;
+    transform: translate(-50%);
+    font-size: 20px;
+  
+}
+
+.BOX input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 17px 14px 20px 16px;
+    margin : -16px 0px -17px 15px;
+    position: absolute;
+    width: 84%;
+    height: 14%
+}
+
+.car-search .BOX {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 37px;
+}
+
+.car-search h1{
+    font-size: 47px;
+    text-align: left;
+    margin: 0px 9px 24px 9px    
+}
+
+
+/* COMPARO */
+
+.car-compare{
+    position: relative;
+    z-index: 10;
+    background: url("../images/Auto_wheels_-5.png") no-repeat;
+    background-size: cover;
+    background-position:initial;
+    background-position-y: -108px;
+    width: 1519px;
+    height: 410px;
+    padding: 30px 40px;
+    /* position: absolute; */
+    /* top: 707px; */
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 40px;
+    font-weight: normal;
+    text-transform: uppercase;
+    span { 
+      font-size: 13px;
+      display: block;
+      padding-left: 4px;
+    }
+  }
+
+.select {
+    display:flex;
+    flex-direction: column;
+    position:relative;
+    width:250px;
+    height:40px;
+    cursor: pointer;
+}
+
+.option {
+    padding:0 30px 0 10px;
+    min-height:40px;
+    display:flex;
+    align-items:center;
+    background:#333;
+    border-top:#222 solid 1px;
+    position:absolute;
+    top:0;
+    width: 100%;
+    pointer-events:none;
+    order:2;
+    z-index:1;
+    /* transition:background .4s ease-in-out; */
+    box-sizing:border-box;
+    overflow:hidden;
+    white-space:nowrap;
+    
+}
+
+.option:hover {
+    background:#666;
+    cursor: pointer;
+  }
+  
+.select:focus .option {
+    position:relative;
+    pointer-events:all;
+}
+  
+.selectopt {
+    opacity:0;
+    position:absolute;
+    left:-99999px;
+  }
+  
+.selectopt:checked + label {
+    order: 1;
+    z-index:2;
+    background:#666;
+    border-top:none;
+    position:relative;
+  }
+  
+.selectopt:checked + .selectopt:after {
+    content:'';
+    width: 0; 
+      height: 0; 
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 5px solid white;
+    position:absolute;
+    right:10px;
+    top:calc(50% - 2.5px);
+    pointer-events:none;
+    z-index:3;
+  }
+  
+  .selectopt:checked + .selectopt:before {
+    position:absolute;
+    right:0;
+    height: 40px;
+    width: 40px;
+    content: '';
+    background:#666;
+  }
+
+#dropdwn1, #dropdwn2 {
+    width: 11%;
+}
+
+
+#dropdwn2 {
+    position: absolute;
+    left: 220px;
+    bottom: 233px;
+
+}
+.comp {
+    font-family: "Salsa", "cursive";
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+p {
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+      color: white;
+}
+
+.sb {
+    size: 300px;
+    position: absolute;
+    left: 178px;
+    border-radius: 5px;
+}
+
+.sb:hover {
+    transition-duration: 90ms;
+    color: white;
+    background-color: grey;
+}
+
+.welcome .text{
+    color: white;
+}
+
+.welcome {
+    margin-top: 7px;
+    margin-left: 9px;
+    margin-right: 14px;
+}
+
+.pfp .profile-pic {
+    margin-right: 17px;
+    margin-top: 4px;
+    max-width: 60px; 
+    max-height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-pic:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.logout .btn {
+    margin-top: 3px;
+}

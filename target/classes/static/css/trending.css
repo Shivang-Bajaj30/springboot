@@ -1,0 +1,96 @@
+.cars {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    padding: 20px;
+    margin-top: 61px;
+    height: 378px;
+}
+
+.trending {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    text-transform: capitalize;
+    padding-left: 6vw; /* Adjust padding for center alignment */
+}
+
+.container {
+  position: relative;
+  left: -22px;
+  display: flex;
+  overflow-x: auto; /* Enables horizontal scrolling */
+  scroll-behavior: smooth;
+}
+
+.container::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar */
+}
+
+.card {
+  overflow: hidden;
+  left: -12px;
+  flex: 0 0 auto;
+  max-width: 395px;
+  max-height: 225px;
+  margin-right: 35px;
+}
+
+.image {
+  border: none;
+  cursor: pointer;
+  /* border-radius: 20px; */
+  padding-top: 0px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.cover {
+    padding-left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit:fill
+}
+
+.desc {
+  position: relative;
+  top: -38px;
+    text-align: center;
+    color: aquamarine;
+}
+
+.left,
+.right {
+    border: none;
+    width: 5vw;
+    height: 52%;
+    position: absolute;
+    top: 124px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    cursor: pointer;
+    z-index: 8;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+.left img,
+.right img {
+    opacity: 0.2;
+    width: 20px;
+    height: 29px;
+}
+
+.left:hover img,
+.right:hover img {
+    opacity: 1;
+}
